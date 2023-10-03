@@ -4,10 +4,9 @@
   --fgColor: #41474E;
   --metaColor: #D26878;
   --headColor: #;
-  --linkColor: #5690AF;
+  --linkColor: #2E5C76;
   --hovColor: #22453F;
   --bgSelect: #FFFAE1;
-  --bgUrl: url(https://i.ibb.co/Qpkrw4V/tile-Light.webp) repeat;
   --red: #D26878;
   --dimRed: #623039;
   --orange: #e08f67;
@@ -16,7 +15,7 @@
   --dimYellow: #D5C5A1;
   --green: #56AFA0;
   --dimGreen: #22453F;
-  --blue: #5690AF;
+  --blue: #2E5C76;
   --dimBlue: #223844;
   --purple: #9271D6;
   --dimPurple: #47356C;
@@ -32,7 +31,6 @@
   --linkColor: #DBD5BC;
   --hovColor: #E2AEA2;
   --bgSelect: #464949;
-  --bgUrl: url(https://i.ibb.co/LzrFBFJ/tileDark.webp) repeat;
   --red: #CD909B;
   --dimRed: #684249;
   --orange: #E2AEA2;
@@ -104,6 +102,7 @@ h6::before {
 
 a {
   text-decoration: none;
+	font-weight: bold;
   padding: 0 .2rem 0 .2rem;
   border-radius: .3rem;
   color: var(--linkColor);
