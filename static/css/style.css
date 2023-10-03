@@ -84,6 +84,8 @@ h1 {
   background-color: var(--metaColor);
   text-align: center;
   text-wrap: balance;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
 }
 
 h1::before {
