@@ -45,8 +45,6 @@ internal_level = "warn"
 
 [extra]
 author = "Speyll"
-favicon = "favicon.ico"
-image = ""
 list_pages = false
 twitter_card = true
 

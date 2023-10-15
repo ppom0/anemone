@@ -83,12 +83,15 @@
 {% if image %}
 <link rel="shortcut icon" type="image/x-icon" href="{{ get_url(path=config.extra.favicon, trailing_slash=false) }}">
 {% endif %}
+<link rel="shortcut icon"
+  href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍏</text></svg>">
 {% endblock metatags %}
 {% if config.generate_feed %}
 {% block feed %}
-<link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="atom.xml", trailing_slash=false) }}"> 
+<link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path=" atom.xml", trailing_slash=false)
+  }}">
 {% endblock feed %}
 {% endif %}
 {% block css %}
-<link rel="stylesheet" href="{{ get_url(path='css/style.css', trailing_slash=false) | safe }}"/>
+<link rel="stylesheet" href="{{ get_url(path='css/style.css', trailing_slash=false) | safe }}" />
 {% endblock css %}
