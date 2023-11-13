@@ -14,6 +14,7 @@
   --yellow: #FFFAE1;
   --dimYellow: #D5C5A1;
   --green: #56AFA0;
+  --lightGreen: #d5ebe7;
   --dimGreen: #22453F;
   --blue: #2E5C76;
   --dimBlue: #223844;
@@ -37,6 +38,7 @@
   --dimOrange: #704941;
   --yellow: #DBD5BC;
   --dimYellow: #6F6847;
+  --lightGreen: #084c3e;
   --green: #78B6AD;
   --dimGreen: #3E615C;
   --blue: #87C9E5;
@@ -133,9 +135,11 @@ ul li:hover::marker {
 }
 
 blockquote {
-  border-left: .5rem solid var(--metaColor);
-  margin: 1rem;
-  padding: 0 0 0 1rem
+  border-left: .2rem solid var(--green);
+  border-radius: 1rem;
+  background-color: var(--lightGreen);
+  margin: 2rem 1rem;
+  padding: 0.5rem 2rem;
 }
 
 textarea {
