@@ -1,11 +1,17 @@
 <hr>
 <div class=footContainer>
-  <div class="footLeft">
-    <p>Source du blog <a href="https://framagit.org/ppom/blog">ici</a>.</p>
-  </div>
-  {% if config.generate_feed %}
-  <div class="footRight">
-    <a class="icons__background" target="_blank" rel="noopener noreferrer" href="{{ get_url(path="atom.xml", trailing_slash=false) }}" title="Subscribe via RSS for updates."><svg class="icons icons__background"><use href="{{ get_url(path='icons.svg#rss', trailing_slash=false) | safe }}"></use></svg></a>
-  </div>
-  {% endif %}
+	<div class="footLeft">
+		<p>Source du blog <a href="https://framagit.org/ppom/blog">ici</a>.</p>
+		<p><a rel="me" href="https://mamot.fr/@ppom">Contact sur Mastodon</a></p>
+	</div>
+	{% if config.generate_feed %}
+	<div class="footRight">
+		<a class="icons__background" target="_blank" rel="noopener noreferrer"
+			href="{{ get_url(path='atom.xml', trailing_slash=false) }}" title="Subscribe via RSS for updates.">
+			<svg class="icons icons__background">
+				<use href="{{ get_url(path='icons.svg#rss', trailing_slash=false) | safe }}"></use>
+			</svg>
+		</a>
+	</div>
+	{% endif %}
 </div>
