@@ -14,8 +14,11 @@
 {% endif %}
 <script>
   const setTheme = (theme) => {
-      document.documentElement.className = theme;
-      localStorage.setItem('theme', theme);
+    document.documentElement.className = theme;
+    document.documentElement.style.colorScheme = theme;
+    // Override zola's giallo overrides
+    [...document.querySelectorAll('pre')].map(pre => pre.style.colorScheme = theme);
+    localStorage.setItem('theme', theme);
   }
   const getTheme = () => {
       const theme = localStorage.getItem('theme');
